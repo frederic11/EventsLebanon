@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:uber="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_sheet_peek_height"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bottom_sheet_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title dummy"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_snippet_event_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Text dummy 1234 1234"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text dummy qwer asdf zxcv"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"/>-->
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="8dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />-->
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <ImageButton
+                    android:id="@+id/start_navigation"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/ic_directions_car_black_36dp"></ImageButton>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="START NAVIGATION"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <ImageButton
+                    android:id="@+id/bottom_sheet_share_button"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/ic_share_black_36dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="SHARE"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom">
+
+        <com.uber.sdk.android.rides.RideRequestButton
+            android:id="@+id/uber_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            uber:ub__style="white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:background="@drawable/border_bottom">
+
+        <ImageView
+            android:id="@+id/establecimiento_icon_sucursales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/ic_restaurant_black_24dp" />
+
+        <ImageView
+            android:id="@+id/establecimiento_icon_sucursale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/establecimiento_icon_sucursales"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_local_drink_black_24dp" />
+
+        <ImageView
+            android:id="@+id/establecimiento_icon_sucursale1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/establecimiento_icon_sucursale"
+            android:layout_marginBottom="12dp"
+            app:srcCompat="@drawable/ic_people_black_24dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/establecimiento_icon_sucursales"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <Button
+                    android:id="@+id/bottom_sheet_text_first_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:text="Text dummy 1"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <Button
+                    android:id="@+id/bottom_sheet_text_second_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:text="Text dummy 2"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <Button
+                    android:id="@+id/bottom_sheet_text_third_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:text="Text dummy 3"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Description"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/bottom_sheet_event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:minHeight="150dp"
+        android:text="dummy description"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_reservation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/reservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_reserve_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserve a Place"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:layout_marginTop="9dp" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/reservation_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="Reserve"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/buy_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_ticket_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Price: "
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:layout_marginTop="9dp" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/Button_buy_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="Buy"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

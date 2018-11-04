@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "884509302251",
+    "firebase_url": "https://eventlebanon001.firebaseio.com",
+    "project_id": "eventlebanon001",
+    "storage_bucket": "eventlebanon001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884509302251:android:73520788726f44d4",
+        "android_client_info": {
+          "package_name": "com.frederictech.eventslebanontest001"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884509302251-r098mlro2768m765q1ca8phllishg3f9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "884509302251-0lm3i4bkaof3lnk2iet94a9md1tq6vic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.frederictech.eventslebanontest001",
+            "certificate_hash": "0d55a470877ba0ba917120dc88204a3df9c0fb6c"
+          }
+        },
+        {
+          "client_id": "884509302251-11t79rv0oiah50l1h6bj070j17stlpfg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzdKq6YdXbR7lBbLeLcRXgHCgK1hlOSjM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884509302251-r098mlro2768m765q1ca8phllishg3f9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
